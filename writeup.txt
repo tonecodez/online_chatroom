@@ -1,9 +1,0 @@
-/* blank write up */
-
-1. Tony Dinh, Anders Bergquist
-
-2. Everything that is discussed in the protocal for Assignment 3 seems to be working in our clients an server. 
-
-3. We tested many cases with entering usernames and sending messsages and worked out any issues we were having. Many of our issues were coming from seg faults which had something to do with how were were appending and removing to our linked list. Sometimes when an observer recieved a message the message would be corrupted but adding a null terminator at the end of our messages seemed to fix the problem.
-
-4. The most challenging part of the assignment was figuring out the select call and understanding how the server interacts with multiple sockets. Once we figured out that the server must return everytime to select to recieve data from any accepted socket the rest of the program flowed like water.  
